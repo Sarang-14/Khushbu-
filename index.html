@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100a2b">
+<title>A Little Surprise for Dr. Khushbu ✨</title>
+<style>
+:root{--bg:#0b0820;--panel:rgba(20,14,48,.82);--pink:#ff78c8;--gold:#ffd98a;--lav:#c8a9ff;--white:#fff8ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--white);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 15% 15%,#37205c 0,transparent 38%),radial-gradient(ellipse at 85% 70%,#32164e 0,transparent 35%),linear-gradient(145deg,#080719,#171033 55%,#09081d);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.65;background-image:radial-gradient(2px 2px at 20px 30px,#fff 45%,transparent 55%),radial-gradient(1px 1px at 80px 110px,#ffd98a 45%,transparent 55%),radial-gradient(2px 2px at 150px 70px,#e8c8ff 45%,transparent 55%),radial-gradient(1px 1px at 220px 160px,#fff 45%,transparent 55%);background-size:250px 200px;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.25}to{opacity:.8}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 12px #ff78c866}50%{box-shadow:0 0 28px #ff78c8aa}}
+@keyframes rise{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes flicker{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(.78);opacity:.8}}
+@keyframes heartFloat{0%{transform:translateY(0) scale(.8);opacity:0}15%{opacity:1}100%{transform:translateY(-110vh) scale(1.3);opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+*{scrollbar-color:#75509d #100a2b}
+main{position:relative;z-index:1;max-width:900px;margin:auto;padding:24px 16px 60px}
+section{display:none;min-height:80vh;align-items:center;justify-content:center;text-align:center;flex-direction:column;padding:30px 18px;animation:rise .8s ease both}
+section.active{display:flex}
+.card{width:min(100%,700px);padding:clamp(24px,5vw,48px);border:1px solid #d9b4ff55;border-radius:28px;background:linear-gradient(135deg,rgba(30,19,66,.88),rgba(13,10,35,.88));box-shadow:0 18px 70px #0007, inset 0 0 30px #b47bff0b;backdrop-filter:blur(12px)}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font:12px Arial,sans-serif}
+h1,h2{line-height:1.15;margin:14px 0;color:#fff5ff;font-weight:normal}
+h1{font-size:clamp(2.5rem,8vw,5rem);text-shadow:0 0 25px #ff78c877}
+h2{font-size:clamp(2rem,6vw,3.4rem)}
+p{font-size:clamp(1rem,2.5vw,1.15rem);line-height:1.8;color:#eee2ff}
+.name{color:var(--pink);font-style:italic}
+.btn{border:1px solid #ff9ddcaa;background:linear-gradient(120deg,#a43b9c,#593aa5);color:white;border-radius:999px;padding:13px 24px;font-size:1rem;cursor:pointer;margin:10px 5px;box-shadow:0 0 20px #d34ec844;transition:.25s}
+.btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 0 28px #ff78c888}
+input{width:min(100%,320px);padding:14px 16px;border:1px solid #c7a1ff88;background:#09071b;color:white;border-radius:12px;font-size:1rem;outline:none}
+input:focus{border-color:var(--pink);box-shadow:0 0 15px #ff78c844}
+.error{color:#ff9fbd;min-height:24px;font:14px Arial,sans-serif}
+.big-icon{font-size:clamp(4rem,14vw,7rem);filter:drop-shadow(0 0 20px #ffadf0);animation:float 3s ease-in-out infinite}
+.gift{font-size:clamp(6rem,20vw,10rem);cursor:pointer;display:inline-block;filter:drop-shadow(0 0 25px #ffb84d);transition:transform .3s}
+.gift:hover{transform:scale(1.08) rotate(-4deg)}
+.cake{font-size:clamp(5rem,16vw,8rem);filter:drop-shadow(0 0 22px #ff9ad8)}
+.candles{font-size:1.8rem;letter-spacing:8px;color:var(--gold);animation:flicker .8s infinite}
+.small{font:13px Arial,sans-serif;color:#bfb0dc}
+.letter{background:linear-gradient(145deg,#fff0d5,#f8d9b4);color:#4b2c48;border-radius:12px;padding:clamp(22px,5vw,42px);text-align:left;box-shadow:0 12px 35px #0005;transform:rotate(-.5deg)}
+.letter h2{color:#72345e;text-align:center;font-size:2rem}
+.letter p{color:#50334c;font-size:1rem;line-height:1.85}
+.signature{text-align:right;font-style:italic;color:#9a427b!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:22px;width:100%}
+.memory{border:1px solid #d5b3ff55;border-radius:18px;padding:20px 12px;background:#ffffff08;min-height:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.memory span{font-size:2rem}.memory strong{color:#ffe5fb;font-size:1rem}.memory small{color:#cfc0e8;line-height:1.5}
+.progress{display:flex;gap:6px;justify-content:center;margin:20px 0}
+.dot{width:7px;height:7px;border-radius:50%;background:#ffffff35}.dot.on{background:var(--pink);box-shadow:0 0 10px var(--pink)}
+footer{text-align:center;color:#a99abd;font:12px Arial,sans-serif;padding:20px}
+.heart{position:fixed;bottom:-30px;z-index:5;pointer-events:none;animation:heartFloat 5s linear forwards}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:10}
+@media(max-width:480px){main{padding:12px 10px 35px}.card{border-radius:22px}.btn{padding:12px 18px}section{min-height:85vh;padding:20px 8px}}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<main>
+  <section id="gate" class="active">
+    <div class="card">
+      <div class="big-icon">🔐</div>
+      <div class="eyebrow">A little secret just for you</div>
+      <h2>Enter the <span class="name">Secret Password</span></h2>
+      <p>This tiny corner of the internet was made especially for someone truly special.</p>
+      <form id="passwordForm">
+        <input id="password" type="password" placeholder="Enter password" autocomplete="off" aria-label="Secret password">
+        <br><button class="btn" type="submit">Unlock Your Surprise ✨</button>
+      </form>
+      <div id="error" class="error" role="status"></div>
+      <div class="small">Psst… the password is something you might know 😉</div>
+    </div>
+  </section>
+
+  <section id="welcome">
+    <div class="card">
+      <div class="eyebrow">Made with lots of love & friendship</div>
+      <div class="big-icon">🌙💫</div>
+      <h1>Hey, <span class="name">Dr. Khushbu</span>!</h1>
+      <p>Some people make life brighter just by being in it.<br>And you are one of those people.</p>
+      <p>Someone who listens, understands, shares little moments, and makes friendship feel like a safe place… deserves a little magic today.</p>
+      <button class="btn" onclick="showSection('gift')">Let's begin your surprise →</button>
+    </div>
+  </section>
+
+  <section id="gift">
+    <div class="card">
+      <div class="eyebrow">Something special is waiting</div>
+      <h2>A little gift, <span class="name">just for you</span></h2>
+      <p>It may be a small gift on a screen, but the feelings behind it are real.</p>
+      <div class="gift" role="button" tabindex="0" aria-label="Open the gift" onclick="openGift()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGift()}">🎁</div>
+      <p id="giftHint">Tap the gift box to open it 💖</p>
+      <button class="btn" id="giftNext" style="display:none" onclick="showSection('cake')">Next surprise →</button>
+    </div>
+  </section>
+
+  <section id="cake">
+    <div class="card">
+      <div class="eyebrow">Make a wish, Doctor!</div>
+      <h2>Happy Birthday!</h2>
+      <div class="candles" id="flames">🕯️ 🕯️ 🕯️</div>
+      <div class="cake">🎂</div>
+      <p>Take a deep breath, make your biggest wish, and blow out the candles.</p>
+      <button class="btn" id="blowBtn" onclick="blowCandles()">Blow Out the Candles ✨</button>
+      <p id="wish" aria-live="polite"></p>
+      <button class="btn" onclick="showSection('fireworks')">See your birthday sky →</button>
+    </div>
+  </section>
+
+  <section id="fireworks">
+    <div class="card">
+      <div class="big-icon">🎆</div>
+      <div class="eyebrow">The whole sky is celebrating you</div>
+      <h1>Happy Birthday,<br><span class="name">Dr. Khushbu!</span></h1>
+      <p>May this new chapter bring you peaceful days, brave dreams, beautiful surprises, and a thousand reasons to smile.</p>
+      <p>And now… there is a letter I wanted you to read. 💌</p>
+      <button class="btn" onclick="celebrate();showSection('letter')">Open your letter 💌</button>
+    </div>
+  </section>
+
+  <section id="letter">
+    <div class="card">
+      <div class="eyebrow">A letter from your best friend</div>
+      <div class="letter">
+        <h2>Dear Dr. Khushbu, 💗</h2>
+        <p>First of all, <strong>Happiest Birthday to you!</strong> 🥳🎂</p>
+        <p>I wanted to make something a little different for your birthday—not just send a simple “Happy Birthday” message, but create a small surprise that could remind you how much you are appreciated.</p>
+        <p>You are not just my friend; you are someone with whom I can share my thoughts, worries, random stories, happiness, and the things I might not always know how to explain to everyone. Thank you for listening to me and for being someone I can talk to openly. That kind of comfort is rare, and I genuinely value it.</p>
+        <p>And today, I also want to celebrate the doctor in you. 🩺 I hope you always remember how meaningful your journey is. Becoming a doctor takes effort, patience, sacrifice, and a strong heart. I wish you success in your work, confidence in every challenge, kind people around you, and the strength to keep going even on the days when life feels exhausting. May you bring healing to many people without forgetting to take care of yourself, too.</p>
+        <p>I hope this year gives you more than achievements. I hope it gives you peace when your mind is busy, laughter when you need it most, people who understand you without making you explain everything, and moments that make you feel proud of the person you are becoming.</p>
+        <p>Whenever you doubt yourself, remember that you have already come a long way. You deserve good things—not because you have to prove anything, but simply because you are you. Keep dreaming, keep learning, keep smiling, and never feel that you have to carry every burden alone.</p>
+        <p>Thank you for being a part of my life and for letting me share a little part of yours. I may not always find the perfect words, but I hope my actions and this little birthday surprise show that our friendship means a lot to me. No matter how busy life gets or how many new chapters begin, I will always wish good things for you.</p>
+        <p>May your days be filled with good health, success, love, calm mornings, happy surprises, and memories you will smile about for years. May your heart stay kind, your dreams stay alive, and your beautiful smile never lose its sparkle. 💫</p>
+        <p><strong>Happy Birthday once again, Dr. Khushbu.</strong> Keep shining as a doctor, as a person, and as the wonderful friend you are. The world needs more caring people like you—and I’m genuinely grateful to call you my best friend. ❤️</p>
+        <p class="signature">With lots of care, good wishes, and friendship,<br>Your Best Friend 💖</p>
+      </div>
+      <button class="btn" onclick="showSection('memories')">A few friendship moments →</button>
+    </div>
+  </section>
+
+  <section id="memories">
+    <div class="card">
+      <div class="eyebrow">No photos needed for these memories</div>
+      <h2>Our Little <span class="name">Friendship Gallery</span> ✨</h2>
+      <p>Some memories live in photos. Others live in conversations, laughter, advice, and the feeling that someone is there for you.</p>
+      <div class="grid">
+        <div class="memory"><span>🌙</span><strong>Late-night talks</strong><small>When one conversation turns into a hundred topics.</small></div>
+        <div class="memory"><span>😂</span><strong>Random laughs</strong><small>The little jokes that make an ordinary day better.</small></div>
+        <div class="memory"><span>💬</span><strong>Honest conversations</strong><small>Sharing thoughts without pretending to be perfect.</small></div>
+        <div class="memory"><span>🫶</span><strong>Support & care</strong><small>Reminding each other that we are not alone.</small></div>
+        <div class="memory"><span>🩺</span><strong>Your doctor journey</strong><small>More growth, more healing, and so many dreams ahead.</small></div>
+        <div class="memory"><span>♾️</span><strong>Best-friend energy</strong><small>Different days, different chapters, still cheering for you.</small></div>
+      </div>
+      <p class="small">These are little placeholders for the moments only you two truly know.</p>
+      <button class="btn" onclick="showSection('final')">One last message ❤️</button>
+    </div>
+  </section>
+
+  <section id="final">
+    <div class="card">
+      <div class="big-icon">💖✨</div>
+      <div class="eyebrow">One more wish, from the heart</div>
+      <h1>Keep shining,<br><span class="name">Dr. Khushbu</span></h1>
+      <p>May your future be as bright as the dreams you carry, your heart be as peaceful as a quiet night sky, and your life be filled with people who value the beautiful person you are.</p>
+      <p>Keep healing, keep growing, keep laughing, and keep being wonderfully you.</p>
+      <h2 class="name">Happy Birthday! 🎂</h2>
+      <p><strong>Forever grateful for our friendship.</strong></p>
+      <button class="btn" onclick="celebrate();makeHearts(18)">Send more birthday magic ✨</button>
+      <p class="small">Made especially for you, with friendship and lots of good wishes.</p>
+      <button class="btn" onclick="showSection('gate')">Replay the surprise ↺</button>
+    </div>
+  </section>
+</main>
+<footer>A tiny birthday universe made for Dr. Khushbu · 17 October 🎂</footer>
+<script>
+const PASSWORD = "doctor17"; // Change this if you want a different password.
+const sections = [...document.querySelectorAll("main section")];
+function showSection(id){
+  sections.forEach(s=>s.classList.toggle("active",s.id===id));
+  window.scrollTo({top:0,behavior:"smooth"});
+  if(id==="fireworks") celebrate();
+}
+document.getElementById("passwordForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const entered=document.getElementById("password").value;
+  if(entered===PASSWORD){document.getElementById("error").textContent="";makeHearts(8);showSection("welcome")}
+  else{document.getElementById("error").textContent="Not quite! Try the secret password again 💗"}
+});
+function openGift(){
+  document.querySelector(".gift").textContent="🎉";
+  document.getElementById("giftHint").textContent="Surprise! A whole birthday universe, made just for you! 💖";
+  document.getElementById("giftNext").style.display="inline-block";
+  celebrate();makeHearts(12);
+}
+function blowCandles(){
+  document.getElementById("flames").textContent="✨  ✨  ✨";
+  document.getElementById("wish").textContent="Wish made! May something wonderful find its way to you this year. 💫";
+  document.getElementById("blowBtn").textContent="Wish sent! 💖";
+  celebrate();makeHearts(10);
+}
+function makeHearts(amount=8){
+  const icons=["💖","💗","💕","✨","💜","⭐"];
+  for(let i=0;i<amount;i++){
+    const el=document.createElement("span");el.className="heart";el.textContent=icons[Math.floor(Math.random()*icons.length)];
+    el.style.left=Math.random()*100+"vw";el.style.animationDuration=(3+Math.random()*3)+"s";el.style.fontSize=(16+Math.random()*22)+"px";
+    document.body.appendChild(el);setTimeout(()=>el.remove(),6500);
+  }
+}
+// Lightweight canvas confetti/fireworks; no external libraries required.
+const canvas=document.getElementById("confetti"),ctx=canvas.getContext("2d");
+let bits=[],raf=null;
+function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
+addEventListener("resize",resize);resize();
+function celebrate(){
+  const colors=["#ff78c8","#ffd98a","#c8a9ff","#8be9fd","#ffffff","#ff9f9f"];
+  for(let i=0;i<150;i++)bits.push({x:innerWidth*(.15+Math.random()*.7),y:innerHeight*(.1+Math.random()*.4),vx:(Math.random()-.5)*7,vy:-Math.random()*7-1,size:2+Math.random()*5,color:colors[Math.floor(Math.random()*colors.length)],life:70+Math.random()*50,spin:Math.random()*6});
+  if(!raf)animate();
+}
+function animate(){
+  ctx.clearRect(0,0,innerWidth,innerHeight);
+  bits=bits.filter(b=>b.life>0&&b.y<innerHeight+30);
+  bits.forEach(b=>{b.x+=b.vx;b.y+=b.vy;b.vy+=.12;b.vx*=.99;b.life--;ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.spin);ctx.fillStyle=b.color;ctx.globalAlpha=Math.min(1,b.life/20);ctx.fillRect(-b.size/2,-b.size/2,b.size,b.size*1.5);ctx.restore()});
+  if(bits.length){raf=requestAnimationFrame(animate)}else{cancelAnimationFrame(raf);raf=null;ctx.clearRect(0,0,innerWidth,innerHeight)}
+}
+</script>
+</body>
+</html>
